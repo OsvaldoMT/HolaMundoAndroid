@@ -1,13 +1,10 @@
 package com.CristianOsvaldoMartinezTellez.holamundoandroid;
-
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-
-
 
 public class DivisionActivity extends AppCompatActivity {
 
@@ -18,10 +15,10 @@ public class DivisionActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_division);
-        editTextX = findViewById(R.id.editTextNumberxr);
-        editTextY = findViewById(R.id.editTextNumberyr);
-        editTextTotal = findViewById(R.id.editTextNumbertotalr);
+        setContentView(R.layout.activity_resta);
+        editTextX = findViewById(R.id.editTextNumberX1);
+        editTextY = findViewById(R.id.editTextNumberY1);
+        editTextTotal = findViewById(R.id.editTextNumberTotal1);
         editTextX.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {

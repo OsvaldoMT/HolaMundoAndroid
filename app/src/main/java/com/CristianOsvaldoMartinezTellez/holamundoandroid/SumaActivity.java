@@ -1,12 +1,10 @@
 package com.CristianOsvaldoMartinezTellez.holamundoandroid;
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-
-
 
 public class SumaActivity extends AppCompatActivity {
 
@@ -18,9 +16,9 @@ public class SumaActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_suma);
-        editTextX = findViewById(R.id.editTextNumberxr);
-        editTextY = findViewById(R.id.editTextNumberyr);
-        editTextTotal = findViewById(R.id.editTextNumbertotalr);
+        editTextX = findViewById(R.id.editTextNumberXS);
+        editTextY = findViewById(R.id.editTextNumberYS);
+        editTextTotal = findViewById(R.id.editTextNumberTotalS);
         editTextX.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {

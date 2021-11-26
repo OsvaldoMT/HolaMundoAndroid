@@ -1,12 +1,12 @@
 package com.CristianOsvaldoMartinezTellez.holamundoandroid;
-
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class Conversor3 extends AppCompatActivity {
+public class Conversor2 extends AppCompatActivity {
 
     private EditText editTextX;
     private EditText editTextTotal;
@@ -14,9 +14,9 @@ public class Conversor3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_conversor3);
-        editTextX = findViewById(R.id.editTextNumberXC3);
-        editTextTotal = findViewById(R.id.editTextNumberTotalC3);
+        setContentView(R.layout.activity_conversor2);
+        editTextX = findViewById(R.id.editTextNumberXC2);
+        editTextTotal = findViewById(R.id.editTextNumberTotalC2);
         editTextX.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
@@ -36,7 +36,7 @@ public class Conversor3 extends AppCompatActivity {
         {
             if( isEntero(editTextX.getText().toString()))
             {
-                total = getEntero( editTextX.getText().toString())-273;
+                total = getEntero( editTextX.getText().toString())*1000;
             }
         }
 

@@ -1,13 +1,11 @@
 package com.CristianOsvaldoMartinezTellez.holamundoandroid;
 
+import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
-
-
 
 public class MultiplicacionActivity extends AppCompatActivity {
 
@@ -19,9 +17,9 @@ public class MultiplicacionActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_multiplicacion);
-        editTextX = findViewById(R.id.editTextNumberxe);
-        editTextY = findViewById(R.id.editTextNumberye);
-        editTextTotal = findViewById(R.id.editTextNumbertotale);
+        editTextX = findViewById(R.id.editTextNumberXM);
+        editTextY = findViewById(R.id.editTextNumberYM);
+        editTextTotal = findViewById(R.id.editTextNumberTotalM);
         editTextX.setOnFocusChangeListener(new View.OnFocusChangeListener() {
             @Override
             public void onFocusChange(View v, boolean hasFocus) {
